@@ -1,0 +1,281 @@
+.div-flexEnd-style {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 5px 10px 10px 5px;
+}
+
+.container2 {
+    display: grid;
+    margin: 5px 5px 5px 5px !important;
+    height: 120vh;
+    width: 100%;
+    grid-template-columns: 1.3fr 1fr 1fr 1.5fr;
+    grid-template-rows: 1.2fr 0.3fr 1.8fr;
+    grid-template-areas:
+        "userLogin userLogin userLogin userLogin"
+        "titulo titulo titulo titulo2"
+        "graphic graphic graphic usersList"
+
+    ;
+    grid-gap: 0.6rem;
+    margin-bottom: 30px;
+
+}
+
+
+
+#quantitiesResume {
+    /* background: green; */
+    grid-area: quantitiesResume;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+}
+
+#userLogin {
+    grid-area: userLogin;
+    border-radius: 10px;
+}
+
+
+#graphic {
+    /* background: blueviolet; */
+    grid-area: graphic;
+    border-radius: 10px;
+    background: white
+}
+
+#graphic:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+
+}
+
+
+#titulo {
+    background: white;
+    grid-area: titulo;
+    border-radius: 10px;
+
+}
+
+#titulo:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+}
+
+#titulo2 {
+    background: white;
+    grid-area: titulo2;
+    border-radius: 10px;
+
+}
+
+#titulo2:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+}
+
+#titulo3 {
+    background: white;
+    grid-area: titulo3;
+    border-radius: 10px;
+
+}
+
+#titulo3:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+}
+
+#titulo4 {
+    background: white;
+    grid-area: titulo4;
+    border-radius: 10px;
+
+}
+
+#titulo4:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+}
+
+#titulo5 {
+    background: white;
+    grid-area: titulo5;
+    border-radius: 10px;
+
+}
+
+#titulo5:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+}
+
+
+
+#usersList {
+    grid-area: usersList;
+    background: white;
+    border-radius: 10px;
+
+
+}
+
+#usersList:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+
+}
+
+#others {
+
+    grid-area: others;
+    background: white;
+    border-radius: 10px;
+
+}
+
+#others:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+
+}
+
+
+
+#others2 {
+
+    grid-area: others2;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+#others2:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+
+}
+
+#others3 {
+
+    grid-area: others3;
+    background: white;
+
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+#others3:hover {
+
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+
+}
+
+
+
+
+
+
+
+/* Dados da pagina de detalhes do user */
+
+.user-details-container {
+    display: grid;
+    margin: 5px 5px 5px 5px !important;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        " info details details "
+        " info details details ";
+    grid-gap: 1rem;
+}
+
+#user-details-div {
+    grid-area: details;
+    background: blue;
+    border-radius: 10px;
+
+}
+
+#user-info-div {
+    grid-area: info;
+    /* background: green; */
+    border-radius: 10px;
+
+}
+
+
+.details-card {
+
+    margin: 5px 5px 5px 5px;
+
+}
+
+
+.details-card:hover {
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+}
+
+/*  userCard style */
+.widgetSm {
+    flex: 1;
+    padding: 2px;
+    margin-right: 2px;
+}
+
+.widgetSmTitle {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.widgetSmImg {
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widgetSmList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widgetSmListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px
+}
+
+
+.widgetSmUser {}
+
+.user-car-display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-detalhes-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 30px 50px 30px;
+}

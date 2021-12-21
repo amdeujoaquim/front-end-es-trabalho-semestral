@@ -1,0 +1,63 @@
+.homeCard-card-text {
+
+    justify-content: center;
+}
+
+.homeCard-card {
+
+    width: 16rem;
+    height: 13rem;
+    margin: 25px 25px 25px 25px;
+    border-radius: none 5px;
+
+}
+
+.homeCard-card:hover {
+    box-shadow: 10px 0 10px -4px #aca4a4,
+        -10px 0 10px -4px #aca4a4;
+
+
+}
+
+.homeCard-card-titte {
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.homeCard-card-titte:hover {
+    color: blue;
+}
+
+.home-grid-item a {
+
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.home-grid-item {
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+
+
+@media screen and (max-width:640px) {
+    .home-grid-item {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:641px) {
+    .home-grid-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1007px) {
+    .home-grid-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
