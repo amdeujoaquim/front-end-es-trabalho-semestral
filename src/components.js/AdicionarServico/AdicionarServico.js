@@ -11,7 +11,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import SaveIcon from '@material-ui/icons/Save';
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
-
+import useFetch from '../useFetch';
 import { Form, Row, Col, Card, InputGroup, Container, FormControl, Label } from 'react-bootstrap';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import cssGeral from '../../css/cssGeral.css'
@@ -68,6 +68,8 @@ const AdicionarServico = () => {
     const [open, setOpen] = useState(false);
     const [open2, setOpen2] = useState(false);
     const [idGerado, setidGerado] = useState(uuid().substring(1, 6));
+
+    const { dbData: medicosList, error, loading } = useFetch('http://127.0.0.1:8000/api/getmedico');
 
 
     const handleClose = (event, reason) => {
@@ -160,8 +162,12 @@ const AdicionarServico = () => {
                                 <Form.Select defaultValue="Choose..."
                                     onChange={(e) => { setTipoUser(e.target.value) }}
                                 >
-                                    <option>Administrador</option>
-                                    <option>Normal</option>
+                                    {
+                                        medicosList?.map(item => (
+                                            <option value={item?.nome} >{item?.nome} </option>
+
+                                        ))
+                                    }
 
                                 </Form.Select>
                             </Form.Group>

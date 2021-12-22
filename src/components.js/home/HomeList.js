@@ -12,7 +12,7 @@ import GroupAddIcon from '@material-ui/icons/GroupAdd';
 export const HomeList = [
 
     {
-        title: "Listar consultas marcadas",
+        title: "Histórico de consultas",
         url: "/listConsulta",
         iconUrl: "/images/student-with-graduation-cap (2).png",
         icon: <FcTodoList style={{ width: 100, height: 100 }} />,

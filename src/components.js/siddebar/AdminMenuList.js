@@ -23,7 +23,7 @@ export const AdminMenuList = [
     //     id: 4
     // },
     {
-        title: "Lista de consultas",
+        title: "Histórico de consultas",
         url: "/listConsulta",
         icon: <ListIcon />,
         cName: "nav-text",

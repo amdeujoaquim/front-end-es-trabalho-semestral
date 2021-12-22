@@ -7,6 +7,7 @@ import AdicionarServicoPage from './pages/adicionarServico';
 
 import DahsboardPage from './pages/dashboard';
 import LoginPage from './pages/login';
+import ListaConsultaPage from './pages/listaConsultas';
 
 
 const Rotas = () => {
@@ -27,6 +28,8 @@ const Rotas = () => {
                 <Route exact path="/registUtilizador" element={<AdicionarUserPage />} />
 
                 <Route exact path="/registservico" element={<AdicionarServicoPage />} />
+
+                <Route exact path="/listConsulta" element={<ListaConsultaPage />} />
 
 
             </  Routes>
